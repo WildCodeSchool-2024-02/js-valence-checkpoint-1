@@ -30,7 +30,9 @@ p {
 nav {
   justify-content: space-between;
 }
-
+main {
+  text-align: center;
+}
 .desktop {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
