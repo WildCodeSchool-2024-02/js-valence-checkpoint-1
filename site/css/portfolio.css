@@ -9,31 +9,57 @@
   --styledShadow: 0 5px 5px 0 var(var(--shadowColor));
 
   --textAlign: center;
-}
 
+}
+@media screen and (max-width: 700px){
+
+  .desktop {
+    display: none;
+  }
+  .skills{
+    display: inline;
+
+  }
+  .projects{
+    display: flex;
+    justify-content:center;
+  }
+}
+header nav{
+  display: flex;
+  justify-content: space-between;
+}
 img {
   max-width: 100%;
 }
-
-h1 {
-  font-size: calc(var(--gutter) * 1.5);
+.head {
+  font-size: calc(var(--gutter) * 0.7);
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  align-items: center;
 }
-
 p {
   padding: 0 var(--gutter);
 }
 
-.menu {
-  display: flex;
+.menu{
+  list-style: none;
   margin-bottom: var(--gutter);
+  
+}
+.menu li{
+  margin-left: 10px;
 }
 
 .desktop {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
-}
+  display: flex;
+  justify-content: center;
 
+}
 .description {
   color: var(--light);
   display: flex;
@@ -94,6 +120,7 @@ p {
 
 .projects a {
   color: var(--purple);
+  opacity: 0.5;
 }
 
 .box {
