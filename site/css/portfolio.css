@@ -129,6 +129,17 @@ p {
   opacity: 0.5;
 }
 
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+}
+
 @media screen and (max-width: 700px) {
   .desktop {
     display: none;
