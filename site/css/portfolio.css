@@ -122,4 +122,9 @@ main > section:first-child {
   .desktop {
     display: block;
   }
+
+  .skills {
+    display: flex;
+    justify-content: center;
+  }
 }
