@@ -16,5 +16,6 @@ function isLeapYear(year) {
     
   // Your code here !
 }
-
+console.log(isLeapYear(2004));
+console.log(isLeapYear(2024));
 module.exports = isLeapYear;
