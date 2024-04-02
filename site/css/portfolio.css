@@ -126,5 +126,11 @@ main {
 @media screen and (min-width: 700px) {
   .skills {
     display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  .skills .column {
+    width: 1000rem;
+    border-radius: 20px;
   }
 }
