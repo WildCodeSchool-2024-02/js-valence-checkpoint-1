@@ -117,10 +117,16 @@ main {
   nav {
     justify-content: flex-start; /* Aligner les éléments à gauche pour les écrans inférieurs à 700px */
   }
-}
-@media screen and (max-width: 700px) {
   .desktop {
     display: none; /* cache l'image */
+  }
+  .skills {
+    flex-direction: column-reverse;
+    display: flex;
+    padding: 0px 10%;
+  }
+  .skills .column {
+    border-radius: 12px;
   }
 }
 @media screen and (min-width: 700px) {
@@ -130,15 +136,6 @@ main {
     justify-content: center;
   }
   .skills .column {
-    width: 1000rem;
     border-radius: 20px;
-  }
-}
-@media screen and (max-width: 700px) {
-  .skills {
-    flex-direction: column-reverse;
-    display: flex;
-    border-radius: 12px;
-    padding: 0px 10%;
   }
 }
