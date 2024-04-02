@@ -129,4 +129,14 @@ p {
   .desktop {
     display: none;
   }
+  .skills {
+    display: flex;
+    flex-direction: column;
+  }
+  .column:first-of-type {
+    border-radius: 12px;
+  }
+  .column:last-child{
+    border-radius: 12px;
+  }
 }
