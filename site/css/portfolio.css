@@ -11,6 +11,24 @@
   --textAlign: center;
 }
 
+header>nav {
+
+
+  justify-content: space-between;
+
+}
+
+header nav ul li {
+  color: blue;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 img {
   max-width: 100%;
 }
@@ -107,4 +125,12 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+
+
+@ media (min-width:700px) {
+  header nav {
+    dispalay: block;
+  }
 }
