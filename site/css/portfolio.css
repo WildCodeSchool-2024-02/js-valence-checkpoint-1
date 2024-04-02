@@ -170,4 +170,19 @@ p {
     display: flex;
     flex-direction: column-reverse;
   }
+
+  .projects{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .information > h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
