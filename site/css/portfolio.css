@@ -88,6 +88,8 @@ p {
 }
 
 .skills--title {
+  display: flex;
+  justify-content: center;
   margin: calc(var(--gutter) * -2) 0;
   text-align: var(--textAlign);
 }
@@ -156,6 +158,6 @@ p {
   }
 
   .skills {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
