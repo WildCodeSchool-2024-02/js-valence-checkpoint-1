@@ -149,6 +149,7 @@ header nav {
 .skills {
   display: flex;
   flex-direction: row-reverse;
+  justify-content: center;
 }
 .skills--title {
   align-self: center;
