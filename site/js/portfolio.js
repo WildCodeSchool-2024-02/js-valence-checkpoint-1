@@ -16,11 +16,11 @@ function nomTextColor() {
     nom.innerHTML = nom.innerHTML.replace(/Matt/g, newText);
     nom.style.color = "white";
   }
-  let newColor = prompt(
-    "Veuillez saisir la couleur que tu veut remplacer par la sectionc:  #750ff7"
-  );
+  let newColor = prompt("Veuillez saisir la couleur  #750ff7 :");
   if (newColor !== null) {
-    let section = document.getElementById("sectionColor");
-    section.style.backgroundColor = newColor;
+    let pinkSections = document.querySelectorAll(".pink-bg");
+    pinkSections.forEach(function (section) {
+      section.style.backgroundColor = newColor;
+    });
   }
 }
