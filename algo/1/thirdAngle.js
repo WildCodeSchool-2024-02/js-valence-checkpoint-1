@@ -5,9 +5,22 @@ Ex:
 thirdAngle(90, 30) doit retourner 60
 thirdAngle(20, 80) doit retourner 80
 */
-
-function thirdAngle(a, b) {
-  // Your code here !
+const triangle = 180;
+function thirdAngle(angle1, angle2) {
+  thirdAngle = 180 - (angle1 + angle2);
+  return 180 - (angle1 + angle2);
 }
 
-module.exports = thirdAngle;
+// Exemples d'utilisation
+console.log(triangle(90, 30)); // Output: 60
+console.log(triangle(20, 80)); // Output: 80
+
+/*thirdAngle = 180 - (angle1 + angle2);
+function thirdAngle(a, b) {
+  // Your code here !
+  thirdAngle = 180 - (angle1 + angle2);
+  return 180 - (angle1 + angle2);
+}
+console.log(thirdAngle(90, 30));
+console.log(thirdAngle(20, 80));
+module.exports = thirdAngle;*/
