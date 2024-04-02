@@ -4,9 +4,10 @@ const addNewName = document.getElementById("addNewName")
 const bgColor = document.getElementsByClassName("pink-bg")
 const textColor= document.querySelectorAll("h4")
 const links= document.querySelectorAll("a")
-const listTools = document.querySelectorAll("ul.front-dev-tools > li")
+const listTools = document.querySelectorAll("#front-dev-tools > li")
+const buttonLi = document.getElementById("modifyUl")
 avatarImage.addEventListener('click', function () {
-        avatarImage.src = "./image/avatar-bis.png";
+        avatarImage.src = "./image/avatar-bis.png"
 })
 
 addNewName.addEventListener('click', function(){
@@ -17,10 +18,10 @@ addNewName.addEventListener('click', function(){
     // FIXED = FORGOT ON " ON THE HTML ID ..... NO COMMENT
     let color = prompt('What color do you want  ? ')
     for( let i = 0; i < bgColor.length; i++ ) {
-        bgColor[i].style.backgroundColor = color;
+        bgColor[i].style.backgroundColor = color
     }
     for( let i = 0; i < textColor.length; i++ ) {
-        textColor[i].style.color = color;
+        textColor[i].style.color = color
 
 }
 })
@@ -30,5 +31,11 @@ addNewName.addEventListener('click', function(){
     for( let i = 0; i< links.length; i++ ) {
         links[i].style.color = colorLink
     }
+})
+
+buttonLi.addEventListener("click", function() {
+    listTools[0].textContent = "VS Code"
+    listTools[1].textContent = "Github"
+    listTools[2].textContent = "Terminal"
 })
 
