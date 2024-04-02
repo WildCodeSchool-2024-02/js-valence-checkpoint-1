@@ -9,3 +9,8 @@ avatar.addEventListener("click", function () {
   }
   this.setAttribute("src", newImage);
 });
+function nomTextColor() {
+  let nom = document.getElementById("firstname");
+  nom.innerHTML = nom.innerHTML.replace(/Matt/g, "Kaled");
+  nom.style.color = "white";
+}
