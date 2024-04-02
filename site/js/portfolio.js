@@ -10,7 +10,10 @@ avatar.addEventListener("click", function () {
   this.setAttribute("src", newImage);
 });
 function nomTextColor() {
-  let nom = document.getElementById("firstname");
-  nom.innerHTML = nom.innerHTML.replace(/Matt/g, "Kaled");
-  nom.style.color = "white";
+  let newText = prompt("Veuillez saisir le texte à remplacer Matt par :");
+  if (newText !== null) {
+    let nom = document.getElementById("firstname");
+    nom.innerHTML = nom.innerHTML.replace(/Matt/g, newText);
+    nom.style.color = "white";
+  }
 }
