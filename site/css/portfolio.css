@@ -120,20 +120,7 @@ p {
   opacity: 50%;
 }
 
-.projects{
-  display: flex;
 
-  justify-content: center;
-  align-items: center;
-
-}
-
-.box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
 
 @media screen and (min-width: 700px){
   header nav{
@@ -151,8 +138,28 @@ p {
     justify-content: center;
     flex-direction: row-reverse;
   }
+  .projects{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 
-
+  .information{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+.information > h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 }
 @media screen and (max-width: 700px){
