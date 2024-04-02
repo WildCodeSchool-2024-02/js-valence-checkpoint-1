@@ -22,11 +22,13 @@
     <main>
       <!-- First banner with title, description, avatar and image desktop -->
       <!-- You can use the avatar image on the folder image -->
-      <section>
-        <figure class="desktop">
-          <img src="image/desktop.svg" alt="desktop" />
-        </figure>
+      <section class="banner">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Explore my work and skills</p>
+        <img src="image/avatar-bis.png" alt="Avatar" class="avatar">
+        <img src="image/desktop.svg" alt="Desktop" class="desktop">
       </section>
+      
 
       <!-- Second banner with description of your name and your presentation -->
       <article>
@@ -40,7 +42,8 @@
         
       <article class="skills">
         <h2 class="skills--title">My Skills</h2>
-          <section class="column">
+          <div class="columns-container">
+        <section class="column">
               <img src="image/frontend.svg" alt="" />
               <h3>Back-end Developer</h3>
               <p>I like to code things from scratch.</p>
@@ -64,6 +67,7 @@
                 <li>You can modify</li>
               </ul>
             </section>
+          </div>
       </article>
 
       <!-- Third banner with list of all your projects -->
