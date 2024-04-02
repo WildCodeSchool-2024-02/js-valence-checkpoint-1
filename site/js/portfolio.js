@@ -2,10 +2,11 @@ const avatar = document.querySelector(".banner img");
 const desc = document.querySelector(".description");
 const firstName = document.querySelector("#firstname");
 
-//change avatar on click
+
 avatar.addEventListener("click", () => {
     avatar.src = "./image/avatar.svg"
 })
+
 
 function createButton(text, bg) {
     const newBtn = document.createElement("button");
@@ -18,7 +19,7 @@ function createButton(text, bg) {
     return newBtn;
 }
 
-//create modify description button & append it to containter
+
 function handleDescBtn() {
     const modifyBtn = createButton("Modify text and color", "transparent");
     desc.appendChild(modifyBtn);
