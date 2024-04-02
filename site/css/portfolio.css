@@ -71,12 +71,14 @@ p {
 
 .skills {
   display: flex;
+  flex-direction: row-reverse;
 
 }
 
 .column {
   width: 400px;
   border-radius: 0px 12px;
+
 }
 
 .skills {
@@ -121,7 +123,7 @@ p {
 }
 
 .projects a {
-  color: var(--purple);
+  color: var(--purple, 0.5);
 }
 
 .box {
