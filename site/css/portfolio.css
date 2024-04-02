@@ -30,6 +30,14 @@ p {
   margin-bottom: var(--gutter);
 }
 
+.first_banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+
 .desktop {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
@@ -109,4 +117,10 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+@media screen and (max-width: 700px) {
+  .desktop {
+    display: none;
+  }
 }
