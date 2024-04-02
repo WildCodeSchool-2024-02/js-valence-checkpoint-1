@@ -11,6 +11,15 @@
   --textAlign: center;
 }
 
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+ 
+
+
 img {
   max-width: 100%;
 }
@@ -23,15 +32,29 @@ p {
   padding: 0 var(--gutter);
 }
 
+
+
 .menu {
   display: flex;
   margin-bottom: var(--gutter);
+}
+
+div, .container-h1-p-img {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  gap:1.6rem;
 }
 
 .desktop {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
+}
+
+@media screen and (max-width : 700px) {
+background-color: red;
 }
 
 .description {
