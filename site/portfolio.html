@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/portfolio.css">
     <title>Checkpoint 1 Portfolio</title>
   </head>
 
@@ -21,25 +21,33 @@
 
     <main>
       <!-- First banner with title, description, avatar and image desktop -->
+        <div class="firstBanner">
+            <h1> FullStack Developer</h1>
+            <h3>I code beautifully simple things, and i love what i do</h3>
+            <img id="avatarImage" src="./image/avatar.svg" alt="pic">
+            <section>
+                <figure class="desktop">
+                    <img src="image/desktop.svg" alt="desktop" />
+                </figure>
+            </section>
+        </div>
       <!-- You can use the avatar image on the folder image -->
-      <section>
-        <figure class="desktop">
-          <img src="image/desktop.svg" alt="desktop" />
-        </figure>
-      </section>
+
 
       <!-- Second banner with description of your name and your presentation -->
       <article>
         <section class="description pink-bg">
           <h1>Hi, I’m <span id="firstname">Matt</span>. Nice to meet you.</h1>
           <p>Since the beginning of my journey as a freelance developer nearly 10 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one problem at a time.</p>
+            <button id="addNewName"> Add your Name ! And change color !  </button>
         </section>
+
       </article>
 
       <!-- Bloc of list of skill front end and back end -->
         
       <article class="skills">
-        <h2 class="skills--title">My Skills</h2>
+        <!-- <h2 class="skills--title">My Skills</h2> -->
           <section class="column">
               <img src="image/frontend.svg" alt="" />
               <h3>Back-end Developer</h3>
@@ -47,9 +55,12 @@
               <h4 class="pink-text">Languages I speak:</h4>
               <p>MySql</p>
               <h4 class="pink-text">Dev Tools:</h4>
-              <ul>
+              <ul class="back-dev-tools">
                 <li>VScode</li>
               </ul>
+              <label for="back_tools"></label>
+              <input type="text" id="back_tools" placeholder="Add your dev tools?">
+              <button class="addBtn" id="myButton">Add</button>
           </section>
           <section class="column">
               <img src="image/frontend.svg" alt="" />
@@ -63,13 +74,16 @@
                 <li>You can modify</li>
                 <li>You can modify</li>
               </ul>
+              <button id="modifyUl"> Modify </button>
             </section>
       </article>
 
       <!-- Third banner with list of all your projects -->
       <article class="projects">
-          <h2>My Recent Work</h2>
-          <p>Here are a few projects I've worked on recently. Want to see more? Email me.</p>
+          <div class="information">
+              <h2>My Recent Work</h2>
+              <p>Here are a few projects I've worked on recently. Want to see more? Email me.</p>
+          </div>
           <section class="box">
             <img src="https://mattfarley.ca/img/logos/kybercore.svg" alt="logo-entreprise" />
             <p>Next level plug and play chassis systems for custom do-it-yourself lightsaber builds.</p>

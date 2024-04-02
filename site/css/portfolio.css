@@ -108,3 +108,81 @@ p {
 .purple-text {
   color: var(--purple);
 }
+.firstBanner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.disabled{
+  opacity: 50%;
+}
+
+
+
+@media screen and (min-width: 700px){
+  header nav{
+    display: flex;
+    justify-content: space-between;
+  }
+  .firstBanner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .skills{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+  .projects{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .information{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+.information > h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+}
+@media screen and (max-width: 700px){
+  .desktop{
+    display: none;
+  }
+  .skills{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .projects{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .information > h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
