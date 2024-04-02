@@ -6,10 +6,13 @@ avatar.addEventListener("click", function () {
 
 const button = document.querySelector("button")
 const firstName = document.querySelector("#firstname")
-const pinkBg = document.querySelector(".pink-bg")
+const pinkBg = document.querySelectorAll(".pink-bg")
+const pinkText = document.querySelectorAll(".pink-text")
 button.addEventListener("click", function () {
   const color = prompt("Enter color:")
-  pinkBg.style.backgroundColor = color
+  pinkBg.forEach((el) => (el.style.backgroundColor = color))
+  pinkText.forEach((el) => (el.style.color = color))
+
   firstName.textContent = prompt("Enter your name:")
   firstName.style.color = "white"
 })
