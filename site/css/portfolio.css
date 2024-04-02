@@ -32,6 +32,7 @@ p {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
+  display: none;
 }
 
 .description {
@@ -109,12 +110,16 @@ p {
   color: var(--purple);
 }
 
+main > section:first-child {
+  text-align: center;
+}
+
 @media screen and (min-width: 700px) {
   header nav {
     justify-content: space-between;
   }
 
-  main > section:first-child {
-    text-align: center;
+  .desktop {
+    display: block;
   }
 }
