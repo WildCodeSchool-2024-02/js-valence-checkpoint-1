@@ -13,7 +13,7 @@ function thirdAngle(a, b) {
   const a = 90
   const b = 30
   const third = thirdAngle (a, b)
-  console.log ("le troisième angle est :"third)
+  console.log ("le troisième angle est :", third)
 }
 
 module.exports = thirdAngle;
