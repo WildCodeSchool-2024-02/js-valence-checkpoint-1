@@ -35,7 +35,6 @@ p {
 }
 
 .description {
-  color: var(--light);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,4 +106,66 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+/*Stephane Feroussier */
+
+section.profil {
+  align-items: flex-start;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-container > h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.section-container > p {
+  padding: 0;
+  margin: 0;
+}
+
+.section-container > img {
+  width: 150px;
+  height: 150px;
+  margin: 10px 0 0 50px;
+}
+
+@media screen and (min-width: 700px) {
+header nav {
+  justify-content: space-between;
+}
+.section-container {
+  align-items: center;
+}
+.section-container > img {
+  margin: 0;
+}
+.skills {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.skills--title {
+  align-self: center;
+}
+}
+
+.figure-desktop {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+  figure.desktop {
+    display: none;
+  }
+  .skills {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
