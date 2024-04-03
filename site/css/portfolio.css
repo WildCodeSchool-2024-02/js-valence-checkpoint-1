@@ -71,6 +71,13 @@ nav {
   padding: 0 10%;
 }
 
+.change-name {
+  background-color: white;
+  border-color: rgb(243, 171, 171);
+  border-style: solid;
+  padding: 5px;
+}
+
 .skills--title {
   margin: calc(var(--gutter) * -2) 0;
   text-align: var(--textAlign);
