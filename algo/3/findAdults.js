@@ -43,7 +43,7 @@ function findAdults(persons) {
     }
 })
 
-return [adultWomen, adultMen]
+  return [adultWomen, adultMen]
 }
 
 module.exports = findAdults;
