@@ -18,7 +18,7 @@ header>nav {
 
 }
 
-header nav ul li {
+li {
   color: blue;
 }
 
@@ -153,29 +153,30 @@ p {
 }
 
 
-
-article h2 {
+.projects {
   display: flex;
+}
+
+
+
+
+h2 p {
+  display: column;
   justify-content: center;
   align-items: center;
 }
 
-article p {
-  text-align: center;
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
+.fin {
 
 
-
-
-
-@media (min-width:700px) {
-  header nav {
-    display: block;
-  }
-
-
-
+  text-align: center;
 }
 
 @media(max-width:700px) {
@@ -183,13 +184,19 @@ article p {
     display: none;
   }
 
+  header nav {
+    justify-content: space-between;
+  }
+
   .skills {
     flex-direction: column-reverse;
   }
 
-  .projects {
+  .box {
     flex-direction: column;
-    width: 700px;
+    width: auto;
+
+
   }
 
   section>.ultime {
