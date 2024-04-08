@@ -75,6 +75,14 @@ p {
 
 }
 
+.btn {
+  padding: 20px;
+  color: white;
+  background-color: pink;
+  border: 2px solid white;
+  border-radius: 15px;
+}
+
 .column {
   width: 400px;
   border-radius: 0px 12px;

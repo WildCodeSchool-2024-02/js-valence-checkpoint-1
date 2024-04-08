@@ -1,16 +1,18 @@
-const btn = document.createElement("button");
+const btn = document.querySelector(".btn");
 const firstname = document.querySelector("#firstname");
 const modifie = document.querySelector("modifie");
 const mouvimage = document.querySelector("#ima");
 const changBackground = document.querySelector(".pink-bg ");
-mouvimage.addEventListener("click", function () {
-  mouvimage.src = "/site/image/avatar-bis.png";
-});
+const changText = document.querySelectorAll("h4");
+const changButton = document.querySelector(".btn");
 
-modifie = firstname.addEventListener("click", () => {
+modifie = btn.addEventListener("click", () => {
   const nom = prompt("entre ton prénom");
-  changBackground.style.backgroundColor = "black";
+  mouvimage.src = "/site/image/avatar.svg";
+  changBackground.style.backgroundColor = " #750ff7 ";
+  changButton.style.backgroundColor = "#750ff7";
   firstname.innerText = nom;
-
   firstname.style.color = "#fff";
+  changText.style.color = "#750ff7";
 });
+function modifie2() {}
