@@ -11,6 +11,24 @@
   --textAlign: center;
 }
 
+header>nav {
+
+
+  justify-content: space-between;
+
+}
+
+li {
+  color: blue;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 img {
   max-width: 100%;
 }
@@ -52,12 +70,34 @@ p {
 }
 
 .skills {
+  display: flex;
+  flex-direction: row-reverse;
+
+}
+
+.btn {
+  padding: 20px;
+  color: white;
+  background-color: pink;
+  border: 2px solid white;
+  border-radius: 15px;
+}
+
+.column {
+  width: 400px;
+  border-radius: 0px 12px;
+
+}
+
+.skills {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
 }
 
 .skills--title {
+  display: flex;
+  justify-content: center;
   margin: calc(var(--gutter) * -2) 0;
   text-align: var(--textAlign);
 }
@@ -72,6 +112,8 @@ p {
   text-align: var(--textAlign);
   box-shadow: var(--styledShadow);
 }
+
+
 
 .column:first-of-type {
   border-bottom-left-radius: 0;
@@ -107,4 +149,70 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+.opac {
+  color: var(--purple);
+
+}
+
+.opac {
+  opacity: 0.3;
+}
+
+
+.projects {
+  display: flex;
+}
+
+
+
+
+h2 p {
+  display: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.fin {
+
+
+  text-align: center;
+}
+
+@media(max-width:700px) {
+  .desktop img {
+    display: none;
+  }
+
+  header nav {
+    justify-content: space-between;
+  }
+
+  .skills {
+    flex-direction: column-reverse;
+  }
+
+  .box {
+    flex-direction: column;
+    width: auto;
+
+
+  }
+
+  section>.ultime {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ultime img {
+    text-align: center;
+  }
 }
