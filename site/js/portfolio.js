@@ -13,3 +13,24 @@ button.addEventListener("click", function () {
   /*box.style.backgroundColor = prompt("Give me a color code?");*/
   root.style.setProperty("--lightWildColor", prompt("Give me a color code?"));
 });
+
+const buttonDevTools = document.querySelector(".modify-dev-tools");
+const ulDevTools = document.getElementById("front-dev-tools");
+const items = document.querySelectorAll("#front-dev-tools li");
+
+buttonDevTools.addEventListener("click", function () {
+  /*
+  for (let i = 0; i < 2; i++) {
+    items[0].textContent = "VsCode";
+    items[1].textContent = "Github";
+    items[2].textContent = "Terminal";
+  }
+  */
+
+  ulDevTools.innerHTML = "";
+  [("VsCode", "Github", "Terminal")].forEach(function (text) {
+    const li = document.createElement("li");
+    li.textContent = text;
+    ulDevTools.appendChild(li);
+  });
+});
